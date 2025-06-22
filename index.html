@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Energy Simulation</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+    <h1>Physics Energy Simulation</h1>
+    <div class="whole">
+        <div class="game">
+            <div class="sliders">
+                <div class="slider">
+                    <p id="frictionValue">Friction: 0%</p><input type="range" id="friction" min="0" max="100" value="0">
+                </div>
+                <div class="slider">
+                    <p id="massValue">Mass: 10kg</p><input type="range" id="mass" min="0" max="100" value="10">
+                </div>
+            </div>
+            <div id="canvasContainer"></div>
+        </div>
+        <canvas id="energyChart"></canvas>
+        <script src="sketch.js"></script> <!-- Link to your JavaScript file -->
+    </div>
+</body>
+</html>
